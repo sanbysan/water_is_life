@@ -25,6 +25,13 @@ img {
 	display: block;
 	transition: 2s;
 }
+#cover input {
+	margin: 5px;
+	transition: 1s;
+} 
+#cover button {
+	transition: 1s;
+}
 #cover h1 {
 	text-transform: uppercase;
 }
@@ -62,6 +69,9 @@ button.navbar-toggler.navbar-toggler-right {
 .section-content {
 	padding: 4rem 1rem;
 }
+button.about-us {
+	cursor: pointer;
+}
 .modal-content {
 	padding: 4%;
 }
@@ -73,12 +83,21 @@ button.navbar-toggler.navbar-toggler-right {
 	background-size: cover;
 	color: white;
 }
+#about a {
+	transition: 1s;
+}
+#about h5 {
+	transition: 1s;
+}
 .about-text {
 	background: rgba(0, 0, 0, 0.2);
 	padding: 1.75rem;
 }
 #movie {
 	background: #eee;
+}
+iframe {
+	transition: 1s;
 }
 #movie h6 {
 	text-transform: uppercase;
@@ -103,8 +122,40 @@ button.navbar-toggler.navbar-toggler-right {
 	right: 30px;
 }
 
- @media only screen and (max-width: 450px){
-	 #cover-background {margin-top: 40px;}
+
+
+
+
+
+
+	
+@media only screen and (max-width: 1000px) {
+	iframe {margin-bottom: 5%;}
+}
+
+
+/* Smaller tablets(Landscape and Portrait)*/
+@media only screen and (min-width: 569px) and (max-width: 767px){
+	#cover button {display: block;margin: auto;}
+}
+
+
+/* Smartphones (Landscape and Portrait)*/
+@media only screen and (min-width: 371px) and (max-width: 568px){
+	#cover button {display: block;margin: auto;}
+	
+}
+
+@media only screen and (max-width: 575px){
+	.card {margin-bottom: 5%;}
+}
+
+@media only screen and (max-width: 450px){
+	 #cover-background {margin-top: 50px;}
 	
 	
+}
+@media only screen and (min-width: 240px) and (max-width: 385px){
+	#about a {display: block; margin: 3% 30%;}
+	#about h5 {text-align: center;}
 }
