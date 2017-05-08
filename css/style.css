@@ -98,6 +98,9 @@ button.about-us {
 }
 iframe {
 	transition: 1s;
+	border: 0 0;
+	width: 100%;
+	height: 315px;
 }
 #movie h6 {
 	text-transform: uppercase;
